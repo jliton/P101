@@ -12,7 +12,7 @@
 	<url>http://maven.apache.org</url>
 <profiles>
 <profile>
-<id>SM</id>
+<id>Smoke</id>
 
 <build>
 		<pluginManagement>
@@ -23,7 +23,7 @@
 					<version>3.0.0-M3</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>testng.xml</suiteXmlFile>
+							<suiteXmlFile>SmokeTest.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
@@ -43,7 +43,7 @@
 					<version>3.0.0-M3</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>test.xml</suiteXmlFile>
+							<suiteXmlFile>Regression.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
@@ -54,23 +54,6 @@
 
 </profile>
 </profiles>
-
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>3.0.0-M3</version>
-					<configuration>
-						<suiteXmlFiles>
-							<suiteXmlFile>testng.xml</suiteXmlFile>
-						</suiteXmlFiles>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
