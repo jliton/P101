@@ -10,50 +10,25 @@
 
 	<name>MNT</name>
 	<url>http://maven.apache.org</url>
-<profiles>
-<profile>
-<id>Smoke</id>
+	
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.0.0-M3</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>SmokeTest.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
 
-<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>3.0.0-M3</version>
-					<configuration>
-						<suiteXmlFiles>
-							<suiteXmlFile>SmokeTest.xml</suiteXmlFile>
-						</suiteXmlFiles>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
-
-</profile>
-<profile>
-<id>Regression</id>
-<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>3.0.0-M3</version>
-					<configuration>
-						<suiteXmlFiles>
-							<suiteXmlFile>Regression.xml</suiteXmlFile>
-						</suiteXmlFiles>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
-
-
-</profile>
-</profiles>
+		
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
