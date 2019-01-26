@@ -6,7 +6,7 @@ public class OBBLoginTest {
 	@Test
 	public void OBBLogin() {
 		
-		System.out.println("VendorePayment");
+		System.out.println("OBBLogin");
 	}
 	
 }

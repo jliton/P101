@@ -7,7 +7,7 @@ public class BizPayTest {
 	@Test
 	public void Bizpay() {
 		
-		System.out.println("VendorePayment");
+		System.out.println("Bizpay");
 	}
 	
 }
